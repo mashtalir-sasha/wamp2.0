@@ -1,0 +1,359 @@
+@import "vars"
+
+//Large: ≥1199px
++media-breakpoint-down(lg)
+	//main page
+	.nav
+		&-list
+			&__item
+				font-size: 16px
+	.contacts
+		margin-top: 120px
+	// service page
+	.block-title
+		&__ttl
+			font-size: 32px
+		&__txt
+			font-size: 16px
+	.service-content
+		&__ttl
+			font-size: 32px
+	.service-portfolio
+		&__ttl
+			font-size: 32px
+	.service-form
+		&__img
+			right: 25px
+	.portfolio
+		&-slider
+			margin: 0 30px
+			&.slick-prev
+				left: -30px
+			&.slick-next
+				right: -30px
+	.animate-container, .parallax-layer
+		display: none
+
+//Medium: ≥991px
++media-breakpoint-down(md)
+	//main page
+	.dropdown-list
+		left: 50%
+		transform: translateX(-50%)
+		z-index: 1
+	.nav
+		&-logo
+			position: static
+			transform: inherit
+			&__note
+				display: none
+			&__img
+				width: 90px
+		.container .row
+			min-height: inherit
+			position: relative
+		&-lang
+			margin-top: 30px
+		&-mob
+			background-color: $bgcolor
+			display: flex
+			align-items: center
+			width: 100%
+			height: calc(100vh - 100px)
+			position: fixed
+			top: 100px
+			left: -100%
+			transition: all ease .3s
+			z-index: 10
+			&__content
+				width: 100%
+			&.show
+				left: 0
+		&-list
+			flex-direction: column
+			&__item
+				width: fit-content
+				font-size: 20px
+				text-align: center
+				margin: 0 auto 10px
+				&:last-child
+					margin-bottom: 30px
+		&__phone
+			display: block
+			text-align: center
+			width: fit-content
+			margin: 0 auto 30px
+		&-btns
+			align-items: center
+	.services
+			&-wrap
+				[class*='col-md-']
+					&:nth-child(1n)
+						border-left: 1px solid #373c45
+						border-right: none
+					&:nth-child(2n)
+						border-right: 1px solid #373c45
+	.analysis
+		&-form
+			&__ttl
+				padding: 0 20px
+			.rline
+				margin-bottom: 20px
+	.fixbg
+		&-form
+			&__btn
+				margin-top: 20px
+	// service page
+	.service-content
+		&__ttl
+			margin-bottom: 60px
+			text-align: center
+		&__screen
+			padding-bottom: 56%
+			margin-left: auto
+			margin-right: auto
+		&__more
+			margin-left: 0
+			text-align: center
+			margin-bottom: 30px
+		&__btn
+			margin: 0 auto
+	.service-portfolio
+		&__ttl
+			text-align: center
+	// modals
+	.modal
+		.fancybox-close-small
+			right: 0
+
+//Small: ≥767px
++media-breakpoint-down(sm)
+	// main page
+	.services
+			&-wrap
+				display: block !important
+				padding: 0 50px
+				[class*='col-md-']
+					border: 1px solid #373c45 !important
+					margin-top: 0
+				.slick-arrow
+					width: 32px
+					height: 32px
+					padding: 0
+					border: none
+					background-color: transparent
+					font-size: 0
+					background-image: url(/img/service-arrow.svg)
+					position: absolute
+					top: 50%
+					transform: translateY(50%)
+					z-index: 9
+					&.slick-prev
+						transform: rotate(-180deg) translateY(-50%)
+						left: 10px
+					&.slick-next
+						right: 10px
+	.fixbg
+		&__ttl
+			font-size: 30px
+		&-form
+			.col-md-6 + .col-md-6
+				.rline
+					margin-top: 20px
+	.analysis
+		&-form
+			&__ttl
+				margin-top: 0
+				background-color: transparent
+				margin-top: 30px
+				font-size: 18px
+			&__btn
+				width: 100%
+	.foot
+		&-link
+			display: table
+			margin-left: auto
+			margin-right: auto
+		&__btn
+			margin: 40px auto 0
+		&__phone
+			margin: 40px auto 0
+		&__conf
+			margin: 40px auto 0
+	.about
+		&-block
+			margin-top: 40px
+	.clients-slider .slick-dots li
+		margin: 0 5px
+		button
+			width: 10px
+			height: 10px
+		&.slick-active
+			button:before
+				width: 22px
+				height: 22px
+	// service page
+	.block-title
+		padding: 20px
+		&:before
+			width: 100vw
+			left: 50%
+			transform: translateX(-50%)
+		&__ttl
+			text-align: center
+			font-size: 24px
+			padding-bottom: 20px
+			margin-bottom: 20px
+		&__txt
+			font-size: 18px
+			text-align: center
+	.head
+		&__btn
+			margin: 20px auto 0
+	.service-form
+		&__ttl
+			&_last
+				margin: 20px 0
+				text-align: center
+		&__btn
+			margin: 0 auto
+	.service-content__txt
+		padding-right: 0
+		overflow-y: hidden
+		max-height: inherit
+
+//Extra small: ≥575px
++media-breakpoint-down(xs)
+	.btn
+		font-size: 16px
+	//main page
+	.nav
+		&-toggle
+			left: 10px
+		&-logo
+			margin-right: 20px
+	.project
+		&-screen
+			max-width: 235px
+			margin: 0 auto
+			&__img
+				top: 10px
+				left: 25px
+				width: 77%
+				height: 80%
+				object-fit: cover
+		&__type
+			margin: 0 auto 10px
+		&__name
+			text-align: center
+		&-text
+			&__ttl
+				&:before, &:after
+					display: none
+		&-list
+			&__item
+				padding-left: 20px
+				&:before
+					left: 10px
+		&-result
+			&__numb
+				font-size: 40px
+			&__txt
+				font-size: 18px
+		&__link
+			margin: 0 auto 30px
+	.portfolio
+		&-slider
+			padding: 0
+			border: none
+			&__slide
+				padding: 0
+			.slick-arrow
+				&.slick-prev
+					left: -35px
+				&.slick-next
+					right: -35px
+	.clients-slider
+		.slick-slide
+			div + div
+				margin-top: 30px
+	.contacts
+		margin-top: 0
+		&-block
+			max-width: 100%
+			position: static
+			transform: none
+			background-color: $accent
+			padding: 40px 0
+			&:before
+				display: none
+	// service page
+	.service-content
+		&__wrap
+			padding-top: 0
+			padding-bottom: 0
+			&:before
+				display: none
+			.ml60
+				margin-left: 0
+		&__ttl
+			font-size: 26px
+		&__screen
+			padding-bottom: 83%
+		&__txt
+			font-size: 16px
+			margin-bottom: 20px
+			text-align: center
+		&__line
+			max-width: 200px
+			margin-bottom: 20px
+			left: 50%
+			transform: translateX(-50%)
+			margin-left: 0
+		&__note
+			font-size: 18px
+			text-align: center
+		&__price
+			font-size: 24px
+			text-align: center
+	.service-portfolio
+		&__ttl
+			font-size: 26px
+		&__btn
+			margin-top: 0
+	.service-form
+		padding: 60px 0
+		&__wrap
+			.container
+				&:before
+					display: none
+		.rline
+			margin-bottom: 20px
+		&__ttl
+			text-align: center
+			&_last
+				margin-top: 0
+	// modals
+	.modal
+		&_marketolog
+			&:before
+				display: none
+		&__ttl
+			font-size: 28px
+		&__subttl
+			font-size: 20px
+		&__txt
+			font-size: 16px
+		.fancybox-close-small
+			right: 0
+			width: 50px
+			height: 50px
+		&-form
+			flex-direction: column
+			.rline
+				width: 100%
+				& + .rline
+					margin-top: 20px
+			&__btn
+				width: 100%
+				margin-top: 20px
