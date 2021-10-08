@@ -23,7 +23,7 @@ $partTitle = trans('main.part_title');
 
 @include('templates.nav')
 
-<header class="head height" style="background-image: url(/{{ $service->image }})">
+<header class="head head_service height" style="background-image: url(/{{ $service->image }})">
 	<div class="container">
 		<div class="row align-items-center justify-content-end">
 			<div class="col-xl-8 col-md-9">
@@ -31,6 +31,7 @@ $partTitle = trans('main.part_title');
 					<h1 class="block-title__ttl">{!! Helpers::getLangString($service,'title') !!}</h1>
 					<h2 class="block-title__txt">{!! Helpers::getLangString($service,'text') !!}</h2>
 				</div>
+				<!-- <img src="/{{ $service->image }}" alt="img" class="head-img d-sm-none"> -->
 				<a href="#modal4" class="head__btn btn fancybox">{{ trans('main.main_btn') }}</a>
 			</div>
 		</div>
@@ -154,6 +155,8 @@ $partTitle = trans('main.part_title');
 	<div class="service-form__wrap">
 		<form class="container form_check">
 			<input type="hidden" name="title" value="{{ trans('main.servicePage_formTtl') }}">
+			<input type="hidden" name="lang" value="{{ app()->getLocale() }}">
+			<input type="hidden" name="page" value="{{ Request::url() }}">
 			<div class="row align-items-end justify-content-center justify-content-lg-start">
 				<div class="col-lg-3 offset-lg-1 col-md-4 col-sm-6">
 					<h3 class="service-form__ttl">{!! trans('main.servicePage_form') !!}</h3>

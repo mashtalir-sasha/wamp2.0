@@ -16,7 +16,7 @@
 
 @include('templates.nav')
 
-<header class="head height" style="background-image: url(img/portfolio-bg.jpg)">
+<header class="head head_service height" style="background-image: url(/img/portfolio-bg.jpg)">
 	<div class="container">
 		<div class="row align-items-center justify-content-end">
 			<div class="col-xl-8 col-md-9">
@@ -24,6 +24,7 @@
 					<h1 class="block-title__ttl">{!! trans('main.portf_h1') !!}</h1>
 					<h2 class="block-title__txt">{!! trans('main.portf_h2') !!}</h2>
 				</div>
+				<img src="/img/portfolio-bg.jpg" alt="img" class="head-img d-sm-none">
 				<a href="#modal4" class="head__btn btn fancybox">{{ trans('main.main_btn') }}</a>
 			</div>
 		</div>

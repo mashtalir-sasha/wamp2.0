@@ -25,7 +25,7 @@ AdminSection::registerModel(Portfolio::class, function (ModelConfiguration $mode
             AdminFormElement::columns()
                 ->addColumn(function () {
                     return [
-                         AdminFormElement::select('page_id', 'Выберите страницу услуги')->setModelForOptions(new Page)->setDisplay('slug')->required(),
+                         AdminFormElement::select('page_id', 'Выберите страницу услуги')->setModelForOptions(new Page)->setDisplay('meta_title')->required(),
                     ];
                 }, 6)
                 ->addColumn(function () {

@@ -64,7 +64,7 @@ AdminSection::registerModel(Page::class, function (ModelConfiguration $model) {
                 })
                 ->addColumn(function () {
                     return [
-                        AdminFormElement::image('image', 'Фоновая картинка'),
+                        AdminFormElement::image('image', 'Фоновая картинка')->required(),
                     ];
                 }),
         ]);

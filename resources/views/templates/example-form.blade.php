@@ -9,6 +9,8 @@
 	</div>
 	<form class="fixbg-form form_check">
 		<input type="hidden" name="title" value="{{ trans('main.example_formTtl') }}">
+		<input type="hidden" name="lang" value="{{ app()->getLocale() }}">
+		<input type="hidden" name="page" value="{{ Request::url() }}">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-3 col-md-6">

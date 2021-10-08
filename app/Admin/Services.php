@@ -27,7 +27,7 @@ AdminSection::registerModel(Service::class, function (ModelConfiguration $model)
             AdminFormElement::columns()
                 ->addColumn(function () {
                     return [
-                         AdminFormElement::select('page_id', 'Выберите страницу для Услуги')->setModelForOptions(new Page)->setDisplay('slug')->required(),
+                         AdminFormElement::select('page_id', 'Выберите страницу для Услуги')->setModelForOptions(new Page)->setDisplay('meta_title')->required(),
                     ];
                 })
                 ->addColumn(function () {

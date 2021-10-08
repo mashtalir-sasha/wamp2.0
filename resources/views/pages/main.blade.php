@@ -16,7 +16,7 @@
 
 @include('templates.nav')
 
-<header class="head height" style="background-image: url(/img/main-bg.jpg)">
+<header class="head head_service height" style="background-image: url(/img/main-bg.jpg)">
 	<div class="container">
 		<div class="row align-items-center justify-content-end">
 			<div class="col-xl-8 col-md-9">
@@ -24,6 +24,7 @@
 					<h1 class="block-title__ttl">{!! trans('main.main_h1') !!}</h1>
 					<h2 class="block-title__txt">{!! trans('main.main_h2') !!}</h2>
 				</div>
+				<img src="/img/main-bg.jpg" alt="img" class="head-img d-sm-none">
 				<a href="#modal1" class="head__btn btn fancybox">{{ trans('main.main_btn') }}</a>
 			</div>
 		</div>
@@ -108,6 +109,8 @@
 				<h3 class="analysis__ttl">{{ trans('main.analysis_ttl') }}</h3>
 				<form class="analysis-form form_check">
 					<input type="hidden" name="title" value="{{ trans('main.analysis_formTtl') }}">
+					<input type="hidden" name="lang" value="{{ app()->getLocale() }}">
+					<input type="hidden" name="page" value="{{ Request::url() }}">
 					<h4 class="analysis-form__ttl">{!! trans('main.analysis_form') !!}</h4>
 					<div class="analysis-form__wrap">
 						<div class="row align-items-center">

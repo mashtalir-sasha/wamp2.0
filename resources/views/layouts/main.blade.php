@@ -66,6 +66,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<p class="modal__txt">{{ trans('main.modal1_txt') }}</p>
 		<form class="modal-form form_check">
 			<input type="hidden" name="title" value="{{ trans('main.modal1_formTtl') }}">
+			<input type="hidden" name="lang" value="{{ app()->getLocale() }}">
+			<input type="hidden" name="page" value="{{ Request::url() }}">
 			<div class="rline">
 				<input type="text" name="phone" class="modal-form__input rfield" placeholder="{{ trans('main.phone_tg') }}">
 			</div>
@@ -78,6 +80,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<h4 class="modal__subttl">{{ trans('main.modal2_subttl') }}</h4>
 		<form class="modal-form form_check">
 			<input type="hidden" name="title" value="{{ trans('main.modal2_formTtl') }}">
+			<input type="hidden" name="lang" value="{{ app()->getLocale() }}">
+			<input type="hidden" name="page" value="{{ Request::url() }}">
 			<div class="rline">
 				<input type="text" name="phone" class="modal-form__input rfield" placeholder="{{ trans('main.phone_tg') }}">
 			</div>
@@ -90,6 +94,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<h4 class="modal__subttl">{{ trans('main.modal3_subttl') }}</h4>
 		<form class="modal-form form_check">
 			<input type="hidden" name="title" value="{{ trans('main.modal3_formTtl') }}">
+			<input type="hidden" name="lang" value="{{ app()->getLocale() }}">
+			<input type="hidden" name="page" value="{{ Request::url() }}">
 			<div class="rline">
 				<input type="text" name="phone" class="modal-form__input rfield" placeholder="{{ trans('main.phone_tg') }}">
 			</div>
@@ -103,6 +109,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<h4 class="modal__subttl">{{ trans('main.modal4_subttl') }}</h4>
 		<form class="modal-form form_check">
 			<input type="hidden" name="title" value="{{ trans('main.modal4_formTtl') }}">
+			<input type="hidden" name="lang" value="{{ app()->getLocale() }}">
+			<input type="hidden" name="page" value="{{ Request::url() }}">
 			<div class="rline rline_w50">
 				<input type="text" name="service" class="modal-form__input rfield" placeholder="{{ trans('main.service_place') }}">
 			</div>
@@ -118,6 +126,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<h4 class="modal__subttl">{{ trans('main.callback_subttl') }}</h4>
 		<form class="modal-form form_check">
 			<input type="hidden" name="title" value="{{ trans('main.callback_formTtl') }}">
+			<input type="hidden" name="lang" value="{{ app()->getLocale() }}">
+			<input type="hidden" name="page" value="{{ Request::url() }}">
 			<div class="rline">
 				<input type="text" name="phone" class="modal-form__input rfield" placeholder="{{ trans('main.phone_tg') }}">
 			</div>
@@ -131,6 +141,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<p class="modal__txt">{! trans('main.marketolog_txt') !}</p>
 		<form class="modal-form form_check">
 			<input type="hidden" name="title" value="{{ trans('main.marketolog_formTtl') }}">
+			<input type="hidden" name="lang" value="{{ app()->getLocale() }}">
+			<input type="hidden" name="page" value="{{ Request::url() }}">
 			<div class="rline">
 				<input type="text" name="name" class="modal-form__input rfield" placeholder="{{ trans('main.name') }}">
 			</div>
