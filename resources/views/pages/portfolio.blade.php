@@ -62,15 +62,19 @@
 			@foreach($item->images as $image)
 			<div class="col-md-6">
 				@if($loop->iteration > 4)
-				<picture>
-					<source srcset="/{{ pathinfo($image, PATHINFO_DIRNAME) }}/@1x/{{ pathinfo($image, PATHINFO_FILENAME) }}.webp 1x, /{{ pathinfo($image, PATHINFO_DIRNAME) }}/{{ pathinfo($image, PATHINFO_FILENAME) }}.webp 2x" type="image/webp">
-					<img srcset="/{{ pathinfo($image, PATHINFO_DIRNAME) }}/@1x/{{ pathinfo($image, PATHINFO_FILENAME) }}.{{ pathinfo($image, PATHINFO_EXTENSION) }} 1x, /{{ $image }} 2x" alt="portfolio" class="service-portfolio__img none" loading="lazy">
-				</picture>
+				<div class="service-portfolio__wraper none">
+					<picture>
+						<source srcset="/{{ pathinfo($image, PATHINFO_DIRNAME) }}/@1x/{{ pathinfo($image, PATHINFO_FILENAME) }}.webp 1x, /{{ pathinfo($image, PATHINFO_DIRNAME) }}/{{ pathinfo($image, PATHINFO_FILENAME) }}.webp 2x" type="image/webp">
+						<img srcset="/{{ pathinfo($image, PATHINFO_DIRNAME) }}/@1x/{{ pathinfo($image, PATHINFO_FILENAME) }}.{{ pathinfo($image, PATHINFO_EXTENSION) }} 1x, /{{ $image }} 2x" alt="portfolio" class="service-portfolio__img" loading="lazy">
+					</picture>
+				</div>
 				@else
-				<picture>
-					<source srcset="/{{ pathinfo($image, PATHINFO_DIRNAME) }}/@1x/{{ pathinfo($image, PATHINFO_FILENAME) }}.webp 1x, /{{ pathinfo($image, PATHINFO_DIRNAME) }}/{{ pathinfo($image, PATHINFO_FILENAME) }}.webp 2x" type="image/webp">
-					<img srcset="/{{ pathinfo($image, PATHINFO_DIRNAME) }}/@1x/{{ pathinfo($image, PATHINFO_FILENAME) }}.{{ pathinfo($image, PATHINFO_EXTENSION) }} 1x, /{{ $image }} 2x" alt="portfolio" class="service-portfolio__img" loading="lazy">
-				</picture>
+				<div class="service-portfolio__wraper">
+					<picture>
+						<source srcset="/{{ pathinfo($image, PATHINFO_DIRNAME) }}/@1x/{{ pathinfo($image, PATHINFO_FILENAME) }}.webp 1x, /{{ pathinfo($image, PATHINFO_DIRNAME) }}/{{ pathinfo($image, PATHINFO_FILENAME) }}.webp 2x" type="image/webp">
+						<img srcset="/{{ pathinfo($image, PATHINFO_DIRNAME) }}/@1x/{{ pathinfo($image, PATHINFO_FILENAME) }}.{{ pathinfo($image, PATHINFO_EXTENSION) }} 1x, /{{ $image }} 2x" alt="portfolio" class="service-portfolio__img" loading="lazy">
+					</picture>
+				</div>
 				@endif
 			</div>
 			@endforeach

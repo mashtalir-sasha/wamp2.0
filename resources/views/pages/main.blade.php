@@ -10,6 +10,7 @@
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="{{ Request::url() }}">
 	<meta property="og:image" content="{{ asset('img/main-bg.jpg') }}">
+	<meta name="it-rating" content="it-rat-ff4923e6852d9652e703377952a68d46" />
 @endsection
 
 @section('content')
@@ -69,8 +70,8 @@
 					@else
 					<a href="{{ route('service', $item->page->slug) }}" class="service-link">{{ trans('main.more_btn') }}</a>
 					@endif
-					<!-- <p class="service-price">Цена от {{ $item->price }}</p> -->
-					<a href="#modal2" class="service-btn btn fancybox">{{ trans('main.service_btn') }}</a>
+					<p class="service-price">{{ trans('main.price_txt') }} {{ $item->price }}</p>
+					<a href="#modal2" class="service-btn btn fancybox" data-price="{{ Helpers::getLangString($price,'link') }}">{{ trans('main.service_btn') }}</a>
 				</div>
 			</div>
 		@endforeach
@@ -158,11 +159,11 @@
 							$path = isset($link['path']) && $link['path'] != '/' ? $link['path'] : '';
 						@endphp
 						@if( isset($item->link) )
-						<!-- <a href="{{ $item->link }}" rel="nofollow" target="_blank" class="project__link d-table d-sm-none">{{ $link['host'] .$path }}</a> -->
+						<a href="{{ $item->link }}" rel="nofollow" target="_blank" class="project__link d-table d-sm-none">{{ $link['host'] .$path }}</a>
 						@endif
 						<div class="project-screen d-block d-sm-none">
 							<img src="/img/ipad.png" alt="screen" class="project-screen__bg">
-							<img src="/{{ $item->image }}" alt="screnn" class="project-screen__img" loading="lazy">
+							<img src="{{ asset($item->image) }}" alt="screnn" class="project-screen__img" loading="lazy">
 						</div>
 						@if( isset( $item->task ) )
 						<h5 class="project-text__ttl">{{ trans('main.task') }}</h5>
@@ -183,13 +184,13 @@
 						</ul>
 						@endif
 					</div>
-					<div class="col-lg-6 align-self-center">
+					<div class="col-lg-6">
 						@if( isset($item->link) )
-						<!-- <a href="{{ $item->link }}" rel="nofollow" target="_blank" class="project__link d-none d-sm-table">{{ $link['host'] .$path }}</a> -->
+						<a href="{{ $item->link }}" rel="nofollow" target="_blank" class="project__link d-none d-sm-table">{{ $link['host'] .$path }}</a>
 						@endif
 						<div class="project-screen d-none d-sm-block">
 							<img src="/img/monitor.png" alt="screen" class="project-screen__bg">
-							<img src="/{{ $item->image }}" alt="screnn" class="project-screen__img" loading="lazy">
+							<img src="{{ asset($item->image) }}" alt="screnn" class="project-screen__img" loading="lazy">
 						</div>
 					</div>
 				</div>

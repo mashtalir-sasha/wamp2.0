@@ -30,8 +30,9 @@ AdminSection::registerModel(Portfolio::class, function (ModelConfiguration $mode
                 }, 6)
                 ->addColumn(function () {
                     return [
-                         AdminFormElement::text('title', 'Заголовок')->required(),
+                         AdminFormElement::text('title', 'Заголовок [UKR]')->required(),
                          AdminFormElement::text('titleEN', 'Заголовок [ENG]')->required(),
+                         AdminFormElement::text('titleRU', 'Заголовок [RUS]')->required(),
                     ];
                 }, 6)
                 ->addColumn(function () {

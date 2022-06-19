@@ -7,7 +7,7 @@ return [
      | -----------------------------------------------------------------
      */
 
-    'supported-locales'      => ['ru', 'en'],
+    'supported-locales'      => ['uk', 'en', 'ru'],
 
     'accept-language-header' => true,
 

@@ -82,6 +82,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<input type="hidden" name="title" value="{{ trans('main.modal2_formTtl') }}">
 			<input type="hidden" name="lang" value="{{ app()->getLocale() }}">
 			<input type="hidden" name="page" value="{{ Request::url() }}">
+			<input type="hidden" name="price">
 			<div class="rline">
 				<input type="text" name="phone" class="modal-form__input rfield" placeholder="{{ trans('main.phone_tg') }}">
 			</div>
@@ -138,7 +139,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div id="marketolog" class="modal modal_marketolog">
 		<h3 class="modal__ttl">{!! trans('main.marketolog_ttl') !!}</h3>
 		<h4 class="modal__subttl">{{ trans('main.marketolog_subttl') }}</h4>
-		<p class="modal__txt">{! trans('main.marketolog_txt') !}</p>
+		<p class="modal__txt">{!! trans('main.marketolog_txt') !!}</p>
 		<form class="modal-form form_check">
 			<input type="hidden" name="title" value="{{ trans('main.marketolog_formTtl') }}">
 			<input type="hidden" name="lang" value="{{ app()->getLocale() }}">
@@ -162,6 +163,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script src="{{ mix('/js/all.js') }}"></script>
 <script src="{{ mix('/js/scripts.js') }}"></script>
+
+<!-- WhatsHelp.io widget -->
+<script>
+  (function(d, s, id, companyId) {
+    var js, sjs = d.getElementsByTagName(s)[0];
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://widget.sender.mobi/connect/loader.js";
+    js.setAttribute('data-company-id', companyId);
+    sjs.parentNode.insertBefore(js, sjs);
+  })(document, "script", "sender-connect", "i77056443234");
+</script>
+<!-- /WhatsHelp.io widget -->
 
 </body>
 </html>

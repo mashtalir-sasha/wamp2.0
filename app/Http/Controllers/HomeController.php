@@ -14,6 +14,7 @@ class HomeController extends Controller
             'maps' => \App\Map::get(),
             'projects' => \App\Project::orderBy('created_at', 'desc')->get(),
             'contacts' => \App\Contact::first(),
+            'price' => \App\Price::first(),
         ]);
     }
 }

@@ -51,23 +51,27 @@ class Portfolio extends Model
                 $smallWebpFile = public_path() . '/img/uploads/@1x/' . pathinfo($file, PATHINFO_FILENAME) . '.webp';
 
                 $img = \Image::make($file);
-                $img->fit(1100, 680, function ($constraint) {
+                $img->resize(1100, null, function ($constraint) {
+                    $constraint->aspectRatio();
                     $constraint->upsize();
                 });
                 $img->save($file, 100);
 
-                $img->fit(550, 340, function ($constraint) {
+                $img->resize(550, null, function ($constraint) {
+                    $constraint->aspectRatio();
                     $constraint->upsize();
                 });
                 $img->save($smallFile, 100);
 
-                $img->fit(1100, 680, function ($constraint) {
+                $img->resize(1100, null, function ($constraint) {
+                    $constraint->aspectRatio();
                     $constraint->upsize();
                 });
                 $img->encode('webp', 100);
                 $img->save($webpFile, 100, 'webp');
 
-                $img->fit(550, 340, function ($constraint) {
+                $img->resize(550, null, function ($constraint) {
+                    $constraint->aspectRatio();
                     $constraint->upsize();
                 });
                 $img->encode('webp', 100);

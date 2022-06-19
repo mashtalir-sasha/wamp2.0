@@ -25,8 +25,9 @@ AdminSection::registerModel(Client::class, function (ModelConfiguration $model) 
             AdminFormElement::columns()
                 ->addColumn(function () {
                     return [
-                        AdminFormElement::text('name', 'Название')->required(),
+                        AdminFormElement::text('name', 'Название [UKR]')->required(),
                         AdminFormElement::text('nameEN', 'Название [ENG]')->required(),
+                        AdminFormElement::text('nameRU', 'Название [RUS]')->required(),
                     ];
                 })
                 ->addColumn(function () {

@@ -80,7 +80,7 @@ $partTitle = trans('main.part_title');
 				</div>
 				<div class="service-content__line"></div>
 				<p class="service-content__note">{!! Helpers::getLangString($item,'page_note') !!}</p>
-				<!-- <p class="service-content__price">Стоимость {{ $item->price }}</p> -->
+				<p class="service-content__price">{{ trans('main.serivePage_price') }} {{ $item->price }}</p>
 				<a href="#modal3" class="service-content__btn btn fancybox">{{ trans('main.serivePage_btn') }}</a>
 			</div>
 			<div class="col-lg-5 d-none d-lg-block">
@@ -124,15 +124,19 @@ $partTitle = trans('main.part_title');
 			@foreach($item->images as $image)
 			<div class="col-md-6">
 				@if($loop->iteration > 4)
-				<picture>
-					<source srcset="/{{ pathinfo($image, PATHINFO_DIRNAME) }}/@1x/{{ pathinfo($image, PATHINFO_FILENAME) }}.webp 1x, /{{ pathinfo($image, PATHINFO_DIRNAME) }}/{{ pathinfo($image, PATHINFO_FILENAME) }}.webp 2x" type="image/webp">
-					<img srcset="/{{ pathinfo($image, PATHINFO_DIRNAME) }}/@1x/{{ pathinfo($image, PATHINFO_FILENAME) }}.{{ pathinfo($image, PATHINFO_EXTENSION) }} 1x, /{{ $image }} 2x" alt="portfolio" class="service-portfolio__img none" loading="lazy">
-				</picture>
+				<div class="service-portfolio__wraper none">
+					<picture>
+						<source srcset="/{{ pathinfo($image, PATHINFO_DIRNAME) }}/@1x/{{ pathinfo($image, PATHINFO_FILENAME) }}.webp 1x, /{{ pathinfo($image, PATHINFO_DIRNAME) }}/{{ pathinfo($image, PATHINFO_FILENAME) }}.webp 2x" type="image/webp">
+						<img srcset="/{{ pathinfo($image, PATHINFO_DIRNAME) }}/@1x/{{ pathinfo($image, PATHINFO_FILENAME) }}.{{ pathinfo($image, PATHINFO_EXTENSION) }} 1x, /{{ $image }} 2x" alt="portfolio" class="service-portfolio__img" loading="lazy">
+					</picture>
+				</div>
 				@else
-				<picture>
-					<source srcset="/{{ pathinfo($image, PATHINFO_DIRNAME) }}/@1x/{{ pathinfo($image, PATHINFO_FILENAME) }}.webp 1x, /{{ pathinfo($image, PATHINFO_DIRNAME) }}/{{ pathinfo($image, PATHINFO_FILENAME) }}.webp 2x" type="image/webp">
-					<img srcset="/{{ pathinfo($image, PATHINFO_DIRNAME) }}/@1x/{{ pathinfo($image, PATHINFO_FILENAME) }}.{{ pathinfo($image, PATHINFO_EXTENSION) }} 1x, /{{ $image }} 2x" alt="portfolio" class="service-portfolio__img" loading="lazy">
-				</picture>
+				<div class="service-portfolio__wraper">
+					<picture>
+						<source srcset="/{{ pathinfo($image, PATHINFO_DIRNAME) }}/@1x/{{ pathinfo($image, PATHINFO_FILENAME) }}.webp 1x, /{{ pathinfo($image, PATHINFO_DIRNAME) }}/{{ pathinfo($image, PATHINFO_FILENAME) }}.webp 2x" type="image/webp">
+						<img srcset="/{{ pathinfo($image, PATHINFO_DIRNAME) }}/@1x/{{ pathinfo($image, PATHINFO_FILENAME) }}.{{ pathinfo($image, PATHINFO_EXTENSION) }} 1x, /{{ $image }} 2x" alt="portfolio" class="service-portfolio__img" loading="lazy">
+					</picture>
+				</div>
 				@endif
 			</div>
 			@endforeach

@@ -27,7 +27,7 @@
 		<div class="row">
 			<div class="col-md-4 order-2 order-md-1">
 				<a href="https://www.google.com/partners/agency?id=1871712672" rel="nofollow" class="foot-link" target="_blank"><img src="/img/partners.png" alt="Google Partners - WAMP"></a>
-				<a href="https://www.facebook.com/business/partner-directory/search?solution_type=campaign_management&id=4907016205998748&section=overview" rel="nofollow" class="foot-link" target="_blank"><img src="img/facebook-marketing-partner.png" alt="Facebook Partners - WAMP"></a>
+				<a href="https://www.facebook.com/business/partner-directory/search?solution_type=campaign_management&id=4907016205998748&section=overview" rel="nofollow" class="foot-link" target="_blank"><img src="/img/facebook-marketing-partner.png" alt="Facebook Partners - WAMP"></a>
 			</div>
 			<div class="col-md-4 order-1 order-md-2">
 				<div class="foot-logo">

@@ -40,14 +40,16 @@ AdminSection::registerModel(Service::class, function (ModelConfiguration $model)
             AdminFormElement::columns()
                 ->addColumn(function () {
                     return [
-                        AdminFormElement::text('title', 'Название на главной')->required(),
+                        AdminFormElement::text('title', 'Название на главной [UKR]')->required(),
                         AdminFormElement::text('titleEN', 'Название на главной [ENG]')->required(),
+                        AdminFormElement::text('titleRU', 'Название на главной [RUS]')->required(),
                     ];
                 })
                 ->addColumn(function () {
                     return [
-                        AdminFormElement::textarea('text', 'Краткий текст на главной')->required(),
+                        AdminFormElement::textarea('text', 'Краткий текст на главной [UKR]')->required(),
                         AdminFormElement::textarea('textEN', 'Краткий текст на главной [ENG]')->required(),
+                        AdminFormElement::textarea('textRU', 'Краткий текст на главной [RUS]')->required(),
                     ];
                 })
                 ->addColumn(function () {
@@ -61,17 +63,20 @@ AdminSection::registerModel(Service::class, function (ModelConfiguration $model)
             AdminFormElement::columns()
                 ->addColumn(function () {
                     return [
-                        AdminFormElement::text('page_title', 'Название на странице')->required(),
+                        AdminFormElement::text('page_title', 'Название на странице [UKR]')->required(),
                         AdminFormElement::text('page_titleEN', 'Название на странице [ENG]')->required(),
-                        AdminFormElement::text('page_note', 'Цитата на странице'),
+                        AdminFormElement::text('page_titleRU', 'Название на странице [RUS]')->required(),
+                        AdminFormElement::text('page_note', 'Цитата на странице [ukr]'),
                         AdminFormElement::text('page_noteEN', 'Цитата на странице [ENG]'),
+                        AdminFormElement::text('page_noteRU', 'Цитата на странице [RUS]'),
                         AdminFormElement::image('page_img', 'Картинка в IMac')->required(),
                     ];
                 })
                 ->addColumn(function () {
                     return [
-                        AdminFormElement::wysiwyg('page_text', 'Описание на странице')->required(),
+                        AdminFormElement::wysiwyg('page_text', 'Описание на странице [UKR]')->required(),
                         AdminFormElement::wysiwyg('page_textEN', 'Описание на странице [ENG]')->required(),
+                        AdminFormElement::wysiwyg('page_textRU', 'Описание на странице [RUS]')->required(),
                     ];
                 }),
         ]);

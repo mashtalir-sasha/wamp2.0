@@ -27,8 +27,9 @@ AdminSection::registerModel(Contact::class, function (ModelConfiguration $model)
             AdminFormElement::columns()
                 ->addColumn(function () {
                     return [
-                        AdminFormElement::textarea('addr', 'Адрес')->required(),
+                        AdminFormElement::textarea('addr', 'Адрес [UKR]')->required(),
                         AdminFormElement::textarea('addrEN', 'Адрес [ENG]')->required(),
+                        AdminFormElement::textarea('addrRU', 'Адрес [RUS]')->required(),
                     ];
                 })
                 ->addColumn(function () {

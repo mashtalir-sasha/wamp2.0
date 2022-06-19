@@ -24,6 +24,7 @@ return [
 
     'more_btn' => 'Подробнее',
     'service_btn' => 'Получить полный прайс',
+	'price_txt' => 'Цена от',
 
     'fix_ttl' => 'Мы уже умеем разложить <span>любой бизнес по полочкам</span>',
     'fix_txt' => 'для выявления проблем, которые <span>мешают постоянному росту прибыли</span>',
@@ -34,7 +35,7 @@ return [
     'analysis_formTtl' => 'Бесплатный анализ компании',
     'analysis_formBtn' => 'Получить стратегию продвижения',
 
-    'cases_ttl' => 'Наши <span>проекты</span>',
+    'cases_ttl' => 'Наши <span>кейсы</span>',
 
     'task' => 'Задача',
     'solution' => 'Решение',
@@ -58,9 +59,9 @@ return [
     'about_result1' => '<span>92+</span><p>Создали сайтов</p>',
     'about_result2' => '<span>162+</span><p>Настроили рекламных кампаний</p>',
     'about_result3' => '<span>40+</span><p>Разработали фирменных стилей</p>',
-    'about_result4' => '<span>6+</span><p>Сняли роликов</p>',
+    'about_result4' => '<span>15+</span><p>Сняли роликов</p>',
 
-    'clients_ttl' => 'С кем мы <span>работаем</span>',
+    'clients_ttl' => 'Мы гордимся работать <span>с Вами и видеть результаты</span>',
 
     'contacts_ttl' => 'Контакты',
 
@@ -80,11 +81,12 @@ return [
     'part_title' => ' | Рекламное Агентство WAMP',
 
     'serivePage_btn' => 'Заказать через сайт и получить скидку',
+	'serivePage_price' => 'Стоимость',
 
     'servicePage_form' => 'Получить примеры реализованных работ</span> в вашей сфере бизнеса',
     'servicePage_formTtl' => 'Получить примеры реализованных работ',
 
-    'servicePage_form_item1' => '<span>Введите телефон/месенджер</span><br>куда отправить пример',
+    'servicePage_form_item1' => '<span>Введите телефон/мессенджер</span><br>куда отправить пример',
     'servicePage_form_item2' => 'Готово!',
 
     'submit' => 'Отправить',

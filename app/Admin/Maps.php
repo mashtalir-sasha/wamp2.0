@@ -25,20 +25,23 @@ AdminSection::registerModel(Map::class, function (ModelConfiguration $model) {
             AdminFormElement::columns()
                 ->addColumn(function () {
                     return [
-                        AdminFormElement::text('place', 'Страна')->required(),
+                        AdminFormElement::text('place', 'Страна [UKR]')->required(),
                         AdminFormElement::text('placeEN', 'Страна [ENG]')->required(),
+                        AdminFormElement::text('placeRU', 'Страна [RUS]')->required(),
                     ];
                 })
                 ->addColumn(function () {
                     return [
-                        AdminFormElement::text('title', 'Заголовок')->required(),
+                        AdminFormElement::text('title', 'Заголовок [UKR]')->required(),
                         AdminFormElement::text('titleEN', 'Заголовок [ENG]')->required(),
+                        AdminFormElement::text('titleRU', 'Заголовок [RUS]')->required(),
                     ];
                 })
                 ->addColumn(function () {
                     return [
-                        AdminFormElement::textarea('text', 'Текст')->required(),
+                        AdminFormElement::textarea('text', 'Текст [UKR]')->required(),
                         AdminFormElement::textarea('textEN', 'Текст [ENG]')->required(),
+                        AdminFormElement::textarea('textRU', 'Текст [RUS]')->required(),
                     ];
                 }),
         ]);

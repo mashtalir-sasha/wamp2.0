@@ -1316,11 +1316,21 @@ button
 		span
 			font-family: $titleExtra
 			color: $accent
-	&__img
+	&__wraper
+		position: relative
+		height: 340px
+		overflow: hidden
 		margin-bottom: 20px
-		animation: fadeIn .3s
+		&:hover img
+			transform: translateY(calc(-100% + 340px))
+			transition: 10s linear
 		&.none
 			display: none
+	&__img
+		animation: fadeIn .3s
+		object-fit: cover
+		width: 100%
+		transform: translateY(0)
 	&__btn
 		margin: 10px auto 0
 		&.none

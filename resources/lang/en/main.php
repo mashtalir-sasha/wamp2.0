@@ -3,134 +3,136 @@
 return [
 
     //main page
-    'title' => 'Рекламное Агентство WAMP',
-    'description' => 'Создание сайтов, интернет-магазинов ✓ Таргетированная, контекстная реклама в Google ✓ SMM продвижение Facebook, Instagram ✓ На связи 24/7 ⭐',
+    'title' => 'Advertising Agency WAMP',
+    'description' => '✓ Website & e-commerce shop development ✓ Search advertising on Google ✓ SMM promotion on Facebook, Instagram ✓ In touch 24/7',
 
-    'nav1' => 'Главная',
-    'nav2' => 'Услуги',
-    'nav3' => 'Наши кейсы',
-    'nav4' => 'Портфолио',
-    'nav5' => 'О нас',
-    'nav6' => 'Блог',
-    'nav7' => 'Контакты',
+    'nav1' => 'Home page',
+    'nav2' => 'Services',
+    'nav3' => 'Our cases',
+    'nav4' => 'Portfolio',
+    'nav5' => 'About us',
+    'nav6' => 'Blog',
+    'nav7' => 'Contacts',
 
-    'main_h1' => 'Рекламное Агентство WAMP.<br><span>Поможем обойти Ваших конкурентов</span>',
-    'main_h2' => '✓ Создание сайтов, интернет-магазинов<br>✓ Таргетированная, контекстная реклама в Google<br>✓ SMM продвижение Facebook, Instagram<br>✓ На связи 24/7<br>✓ Маркетинговое агентство из Киева.',
+    'main_h1' => 'Advertising Agency WAMP<br><span>We will help You bypass Your competitors</span>',
+    'main_h2' => '✓ Website & e-commerce shop development<br>✓ Search advertising on Google<br>✓ SMM promotion on Facebook, Instagram<br>✓ In touch 24/7<br>✓ Marketing agency from Kyiv',
 
-    'main_btn' => 'узнать стоимость',
+    'main_btn' => 'Get help',
 
-    'service_ttl' => 'Наши <span>услуги</span>',
-    'service_txt' => 'В нашем агентстве <b>есть более 18 услуг.</b> Мы подберем эффективное предложение исходя из Вашего бюджета и направления бизнеса',
+    'service_ttl' => 'Our <span>services</span>',
+    'service_txt' => 'Our agency <b>has more than 18 services.</b> We will prepare an exclusive offer based on Your budget, needs and business niche',
 
-    'more_btn' => 'Подробнее',
-    'service_btn' => 'Получить полный прайс',
+    'more_btn' => 'Read more',
+    'service_btn' => 'Download full price list',
+	'price_txt' => 'Price starts at',
 
-    'fix_ttl' => 'Мы уже умеем разложить <span>любой бизнес по полочкам</span>',
-    'fix_txt' => 'для выявления проблем, которые <span>мешают постоянному росту прибыли</span>',
+    'fix_ttl' => 'We already know how to analyse <span>any business in details</span>',
+    'fix_txt' => 'to identify problems that <span>prevent the constant growth of Your profit</span>',
 
-    'analysis_ttl' => 'У Вас уже есть сайт и запущенная реклама. Однако Вы недовольны результатом?',
-    'analysis_form' => 'Мы <span>бесплатно проанализируем</span> вашу компанию и<br>дадим оптимальное решение',
+    'analysis_ttl' => 'You already have a website and ads running. However, are You unhappy with the result?',
+    'analysis_form' => 'We will <span>do the audit of Your company and ads for free</span> and<br>provide You the best solution',
 
-    'analysis_formTtl' => 'Бесплатный анализ компании',
-    'analysis_formBtn' => 'Получить стратегию продвижения',
+    'analysis_formTtl' => 'Free company audit',
+    'analysis_formBtn' => 'Get a strategy of promotion',
 
-    'cases_ttl' => 'Наши <span>проекты</span>',
+    'cases_ttl' => 'Our <span>projects</span>',
 
-    'task' => 'Задача',
-    'solution' => 'Решение',
-    'strategy' => 'Стратегия',
-    'result' => 'Результат',
+    'task' => 'Task',
+    'solution' => 'Solution',
+    'strategy' => 'Strategy',
+    'result' => 'Results',
 
-    'example_ttl' => 'Получить примеры <span>реализованных работ</span>',
-    'example_txt' => 'в Вашей сфере бизнеса',
+    'example_ttl' => 'Get cases of <span>completed projects</span>',
+    'example_txt' => 'in Your business niche',
 
-    'example_formTtl' => 'Получить примеры реализованных работ',
-    'example_formBtn' => 'Отправить',
+    'example_formTtl' => 'Get cases of completed projects',
+    'example_formBtn' => 'Submit',
 
-    'about_ttl' => 'Немного <span>о нас</span>',
+    'about_ttl' => 'A few words <span>about us</span>',
 
-    'about_txt1' => 'WAMproject — это креативное маркетинговое агентство полного цикла. За 4 года мы реализовали 92+ проектов для различных сфер бизнеса.<br>Мы на связи 24 часа, что позволяет нашим клиентам чувствовать безопасно и получать максимальную эффективность от сотрудничества в любой точке мира.',    
-    'about_txt2' => 'В нашей команде работает 9 специалистов, каждый из которых профессионал в своем деле, поэтому Вам не нужно искать наёмных работников — команда уже собрана! Мы не «сливаем» деньги для Вашего постоянного  инвестирования в рекламу, а работаем на результат.',
-    'about_txt3' => 'Ценовая политика является абсолютно лояльной, наша задача — не делать разовую работу, наши клиенты остаются с нами годами, ведь всегда при масштабировании можно улучшать показатели, оптимизировать рекламу и следовать в ногу с тенденциями в маркетинге и рекламе. У нас есть опыт запуска проектов в таких странах: Украина, Казахстан, США, Босния и Герцеговина, Чешская Республика, Малайзия, Польша, Греция, ОАЭ, Великобритания, а следующим проектом может стать и Ваш!',
+    'about_txt1' => 'WAMproject is a full cycle creative marketing agency. For 4 years we have launched 92+ projects for various business niches.<br>We are in touch 24 hours, which allows our clients to feel safe and get maximum efficiency from cooperation anywhere in the world.',    
+    'about_txt2' => 'Our team employs 9 specialists, each of whom is a professional in his field, so You do not need to look for employees - the team is already packed and ready! We do not "drain" money for Your constant investment in advertising, but we work for the result.',
+    'about_txt3' => 'The pricing policy is absolutely loyal, our task is not to do a one-time job, our clients stay with us for years, because always when scaling, You can improve performance, optimize advertising and follow new trends in marketing and advertising. We have experience in launching projects in such countries: Ukraine, Kazakhstan, USA, Bosnia, Czech Republic, Malaysia, Poland, Greece, UAE, Great Britain and next project may be Yours!',
 
-    'about_btn' => 'Получить консультацию маркетолога',
+    'about_btn' => 'Request a call with CEO',
 
-    'about_result1' => '<span>92+</span><p>Создали сайтов</p>',
-    'about_result2' => '<span>162+</span><p>Настроили рекламных кампаний</p>',
-    'about_result3' => '<span>40+</span><p>Разработали фирменных стилей</p>',
-    'about_result4' => '<span>6+</span><p>Сняли роликов</p>',
+    'about_result1' => '<span>92+</span><p>Websites developed</p>',
+    'about_result2' => '<span>162+</span><p>Advertising campaigns launched</p>',
+    'about_result3' => '<span>40+</span><p>Corporate identity designed</p>',
+    'about_result4' => '<span>6+</span><p>Ad videos shooted</p>',
 
-    'clients_ttl' => 'С кем мы <span>работаем</span>',
+    'clients_ttl' => 'Our <span>clients</span>',
 
-    'contacts_ttl' => 'Контакты',
+    'contacts_ttl' => 'Contacts',
 
-    'callback' => 'Перезвонить мне',
-    'privacy' => 'Политика конфиденциальности',
+    'callback' => 'Call me back',
+    'privacy' => 'Privacy policy',
 
     //portfolio page
 
-    'title_portf' => 'Портфолио | Рекламное Агентство WAMP',
+    'title_portf' => 'Portfolio | Advertising agency WAMP',
 
-    'portf_h1' => 'Уже 4 года клиенты работают <br class="d-none d-lg-block"><span>с нами в Украине, Казахстане,</span> Европе, Великобритании и США <br class="d-none d-lg-block"><span>и рекомендуют знакомым.</span>',
-    'portf_h2' => 'Мы закрываем весь цикл маркетинговых услуг, от создания бренда до запуска всех видов рекламы. Присоединяйтесь!',
+    'portf_h1' => 'For 4 years clients<br class="d-none d-lg-block"><span>from Ukraine, Kazakhstan, Europe, Great Britain and the USA</span> have been working with us <br class="d-none d-lg-block"><span>and recommend us to their friends</span>',
+    'portf_h2' => 'We provide the entire cycle of marketing services, from brand development to the launch of all types of advertising. Join us!',
 
-    'more_example' => 'Еще примеры',
+    'more_example' => 'More cases',
 
     //service page
-    'part_title' => ' | Рекламное Агентство WAMP',
+    'part_title' => ' | Advertising agency WAMP',
 
-    'serivePage_btn' => 'Заказать через сайт и получить скидку',
+    'serivePage_btn' => 'Request services on website and get a discount',
+	'serivePage_price' => 'Price starts at',
 
-    'servicePage_form' => 'Получить примеры реализованных работ</span> в вашей сфере бизнеса',
-    'servicePage_formTtl' => 'Получить примеры реализованных работ',
+    'servicePage_form' => 'Get cases in</span> Your business niche',
+    'servicePage_formTtl' => 'Get cases of launched projects',
 
-    'servicePage_form_item1' => '<span>Введите телефон/месенджер</span><br>куда отправить пример',
-    'servicePage_form_item2' => 'Готово!',
+    'servicePage_form_item1' => '<span>Enter Your phone number / messenger login</span><br>where to send cases',
+    'servicePage_form_item2' => 'Ready!',
 
-    'submit' => 'Отправить',
+    'submit' => 'Submit',
 
     //form placeholders
-    'phone_tg' => 'Ваш телефон/Telegram:',
-    'service_place' => 'Услуга:',
-    'business' => 'Какое у Вас направление бизнеса:',
-    'where' => 'Куда отправить примеры?',
-    'how' => 'Как с Вами связаться?',
-    'business2' => 'Какая у Вас сфера?',
-    'phone' => 'Ваш телефон',
-    'name' => 'Ваш имя:',
+    'phone_tg' => 'Your phone number / messenger',
+    'service_place' => 'Business goal',
+    'business' => 'What is Your business niche?',
+    'where' => 'Where to send cases?',
+    'how' => 'How may we reach You?',
+    'business2' => 'What is Your niche?',
+    'phone' => 'Your phone',
+    'name' => 'Your name',
 
     //modal windows
-    'modal1_ttl' => 'Мы не продаем<br><span>сайты или рекламу,</span>',
-    'modal1_subttl' => 'только комплексный подход позволит Вам стать успешным в своём бизнесе',
-    'modal1_txt' => 'Оставьте заявку и мы подберем решение для Вас',
-    'modal1_formTtl' => 'Подбор решения индивидуально',
+    'modal1_ttl' => 'We do not sell<br><span>websites or our services</span>',
+    'modal1_subttl' => 'only an integrated approach will allow You to become successful in Your business',
+    'modal1_txt' => 'Leave a request and we will find a solution for You',
+    'modal1_formTtl' => 'Individual solution',
 
-    'modal2_ttl' => 'Более <span>подробный прайс</span>',
-    'modal2_subttl' => 'со всеми услугами Вы можете скачать на телефон',
-    'modal2_formTtl' => 'Скачать прайс со всеми услугами',
-    'modal2_formBtn' => 'Скачать прайс',
+    'modal2_ttl' => 'All services <span>price-list</span>',
+    'modal2_subttl' => 'We will send to Your phone',
+    'modal2_formTtl' => 'Download all services price-list',
+    'modal2_formBtn' => 'Download price-list',
 
-    'modal3_ttl' => 'Оставьте ваш<br><span>телефон / мессенджер</span>',
-    'modal3_subttl' => 'и мы пришлем Вам промокод со скидкой',
-    'modal3_formTtl' => 'Получить промокод со скидкой',
+    'modal3_ttl' => 'Enter Your<br><span>phone number / messenger</span>',
+    'modal3_subttl' => 'we will send You a promo code for discount',
+    'modal3_formTtl' => 'Get a discount promo code',
 
-    'modal4_txt' => 'Часто сложно определиться, что именно',
-    'modal4_ttl' => '<span>нужно Вашему бизнесу</span> для увеличения продаж.',
-    'modal4_subttl' => 'Оставьте заявку и мы подберем инструменты для реализаций Ваших целей.',
-    'modal4_formTtl' => 'Подбрать инструменты для реализаций целей',
+    'modal4_txt' => 'It is often difficult to decide what exactly',
+    'modal4_ttl' => '<span>Your business needs</span> to increase the profit',
+    'modal4_subttl' => 'Leave a request and we will draw up a strategy to achieve Your goals',
+    'modal4_formTtl' => 'Prepare me a strategy to achieve My goals',
 
-    'callback_ttl' => 'Оставьте <span>заявку</span>',
-    'callback_subttl' => 'и мы Вам перезвоним',
-    'callback_formTtl' => 'Обратный звонок',
-    'callback_btn' => 'Перезвонить',
+    'callback_ttl' => 'Leave <span>Your details</span>',
+    'callback_subttl' => 'we will call you back',
+    'callback_formTtl' => 'Call back',
+    'callback_btn' => 'Call me',
 
-    'marketolog_ttl' => 'Исходя <span>из опыта</span>',
-    'marketolog_subttl' => 'многие клиенты не знают, с чего начать продвижение',
-    'marketolog_txt' => 'Запишитесь <span>на консультацию к маркетологу</span>',
-    'marketolog_formTtl' => 'Записаться на консультацию маркетолога',
-    'marketolog_formBtn' => 'Записаться',
+    'marketolog_ttl' => 'From <span>our experience</span>',
+    'marketolog_subttl' => 'many clients do not know how to start promotion',
+    'marketolog_txt' => 'Schedule <span>a call with our CEO</span>',
+    'marketolog_formTtl' => 'Schedule a call',
+    'marketolog_formBtn' => 'Submit',
 
-    'thn_ttl' => 'Спасибо за обращение!',
-    'thn_txt' => 'Мы с Вами свяжемся в ближайшее время.',
+    'thn_ttl' => 'Thank you for contacting us!',
+    'thn_txt' => 'We will contact you shortly.',
 
 ];

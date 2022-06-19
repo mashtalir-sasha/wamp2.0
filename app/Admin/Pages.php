@@ -30,20 +30,23 @@ AdminSection::registerModel(Page::class, function (ModelConfiguration $model) {
                 }, 12)
                 ->addColumn(function () {
                     return [
-                        AdminFormElement::textarea('meta_title', 'Meta Title [RUS]')->required(),
+                        AdminFormElement::textarea('meta_title', 'Meta Title [UKR]')->required(),
                         AdminFormElement::textarea('meta_titleEN', 'Meta Title [ENG]')->required(),
+                        AdminFormElement::textarea('meta_titleRU', 'Meta Title [RUS]')->required(),
                     ];
                 }, 4)
                 ->addColumn(function () {
                     return [
-                        AdminFormElement::textarea('meta_description', 'Meta Description [RUS]')->required(),
+                        AdminFormElement::textarea('meta_description', 'Meta Description [UKR]')->required(),
                         AdminFormElement::textarea('meta_descriptionEN', 'Meta Description [ENG]')->required(),
+                        AdminFormElement::textarea('meta_descriptionRU', 'Meta Description [RUS]')->required(),
                     ];
                 }, 4)
                 ->addColumn(function () {
                     return [
-                        AdminFormElement::textarea('meta_keywords', 'Meta Keywords [RUS]'),
+                        AdminFormElement::textarea('meta_keywords', 'Meta Keywords [UKR]'),
                         AdminFormElement::textarea('meta_keywordsEN', 'Meta Keywords [ENG]'),
+                        AdminFormElement::textarea('meta_keywordsRU', 'Meta Keywords [RUS]'),
                     ];
                 }, 4),
         ]);
@@ -52,14 +55,16 @@ AdminSection::registerModel(Page::class, function (ModelConfiguration $model) {
             AdminFormElement::columns()
                 ->addColumn(function () {
                     return [
-                        AdminFormElement::textarea('title', 'Заголовок')->required(),
+                        AdminFormElement::textarea('title', 'Заголовок [UKR]')->required(),
                         AdminFormElement::textarea('titleEN', 'Заголовок [ENG]')->required(),
+                        AdminFormElement::textarea('titleRU', 'Заголовок [RUS]')->required(),
                     ];
                 })
                 ->addColumn(function () {
                     return [
-                        AdminFormElement::textarea('text', 'Текст [RUS]')->required(),
+                        AdminFormElement::textarea('text', 'Текст [UKR]')->required(),
                         AdminFormElement::textarea('textEN', 'Текст [ENG]')->required(),
+                        AdminFormElement::textarea('textRU', 'Текст [RUS]')->required(),
                     ];
                 })
                 ->addColumn(function () {

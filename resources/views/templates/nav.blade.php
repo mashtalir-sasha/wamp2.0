@@ -54,8 +54,9 @@
 				<a href="tel:+38{{ preg_replace('~[^0-9]~','',$contacts['phone']) }}" class="nav__phone">{{ $contacts->phone }}</a>
 				<div class="nav-btns">
 					<div class="nav-lang">
-						<a @if(localization()->getCurrentLocale() == 'ru') class="nav-lang__item active" @else href="{{ localization()->getLocalizedURL('ru') }}" class="nav-lang__item" @endif>ru</a>
+						<a @if(localization()->getCurrentLocale() == 'uk') class="nav-lang__item active" @else href="{{ localization()->getLocalizedURL('uk') }}" class="nav-lang__item" @endif>ua</a>
 						<a @if(localization()->getCurrentLocale() == 'en') class="nav-lang__item active" @else href="{{ localization()->getLocalizedURL('en') }}" class="nav-lang__item" @endif>en</a>
+						<a @if(localization()->getCurrentLocale() == 'ru') class="nav-lang__item active" @else href="{{ localization()->getLocalizedURL('ru') }}" class="nav-lang__item" @endif>ru</a>
 					</div>
 				</div>
 			</div>
@@ -99,8 +100,9 @@
 		<div class="nav-btns">
 			<a href="#" class="nav__callback">{{ trans('main.callback') }}</a>
 			<div class="nav-lang">
-				<a @if(localization()->getCurrentLocale() == 'ru') class="nav-lang__item active" @else href="{{ localization()->getLocalizedURL('ru') }}" class="nav-lang__item" @endif>ru</a>
+				<a @if(localization()->getCurrentLocale() == 'uk') class="nav-lang__item active" @else href="{{ localization()->getLocalizedURL('uk') }}" class="nav-lang__item" @endif>ua</a>
 				<a @if(localization()->getCurrentLocale() == 'en') class="nav-lang__item active" @else href="{{ localization()->getLocalizedURL('en') }}" class="nav-lang__item" @endif>en</a>
+				<a @if(localization()->getCurrentLocale() == 'ru') class="nav-lang__item active" @else href="{{ localization()->getLocalizedURL('ru') }}" class="nav-lang__item" @endif>ru</a>
 			</div>
 		</div>
 	</div>

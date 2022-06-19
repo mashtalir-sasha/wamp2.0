@@ -7,6 +7,15 @@ $(function() {
 		navMob.classList.toggle('show')
 	})
 
+	let clickNav = document.querySelectorAll('.nav-list__item .anchor')
+
+	clickNav.forEach(el => {
+		el.addEventListener("click", () => {
+			toggle.classList.remove('opened')
+			navMob.classList.remove('show')
+		})
+	})
+
 	const navHeight = $('.nav').innerHeight()
 	$('.height').css('margin-top', navHeight)
 
@@ -107,15 +116,22 @@ $(function() {
 
 	
 		$('.openMore').click(function(e) {
-			$(this).closest('.service-portfolio').find('.service-portfolio__img.none').removeClass('none')
+			$(this).closest('.service-portfolio').find('.service-portfolio__wraper.none').removeClass('none')
 			$(this).closest('.service-portfolio').find('.openModal.none').removeClass('none')
 			$(this).hide()
 			e.preventDefault()
 		})
 	
+	//price service btn
+	$('.service-btn').click(function() {
+		let link = $(this).data('price')
+		let hiddenInput = $('#modal2 form').find('input[name=price]')
+		hiddenInput.val(link)
+	})
 
 	// Отправка формы
 	$('form').submit(function() {
+		let link = $(this).find('input[name=price]').val()
 		let data = $(this).serialize()
 		data += '&ajax-request=true'
 		$.ajax({
@@ -124,6 +140,9 @@ $(function() {
 			dataType: 'json',
 			data: data,
 			success: (function() {
+				if (link != undefined) {
+					window.open(link, '_blank')
+				}
 				$.fancybox.close()
 				$.fancybox.open({src:'#thn'})
 			})()
