@@ -17,7 +17,13 @@ $(function() {
 	})
 
 	const navHeight = $('.nav').innerHeight()
-	$('.height').css('margin-top', navHeight)
+	$('.height').css({
+		'margin-top' : navHeight,
+		'min-height' : 'calc(100vh - '+navHeight+'px)'
+	})
+	$('.height .row').css({
+		'min-height' : 'calc(100vh - '+navHeight+'px)'
+	})
 
 	if ($(window).width() < 767) {
 		$('.services-wrap').slick({

@@ -23,7 +23,7 @@ $partTitle = trans('main.part_title');
 
 @include('templates.nav')
 
-<header class="head head_service height" style="background-image: url(/{{ $service->image }})">
+<header class="head height" style="background-image: url(/{{ $service->image }})">
 	<div class="container">
 		<div class="row align-items-center justify-content-end">
 			<div class="col-xl-8 col-md-9">
