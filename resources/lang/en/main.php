@@ -50,7 +50,7 @@ return [
 
     'about_ttl' => 'A few words <span>about us</span>',
 
-    'about_txt1' => 'WAMproject is a full cycle creative marketing agency. For 4 years we have launched 92+ projects for various business niches.<br>We are in touch 24 hours, which allows our clients to feel safe and get maximum efficiency from cooperation anywhere in the world.',    
+    'about_txt1' => 'WAMproject is a full cycle creative marketing agency. For 5 years we have launched 92+ projects for various business niches.<br>We are in touch 24 hours, which allows our clients to feel safe and get maximum efficiency from cooperation anywhere in the world.',    
     'about_txt2' => 'Our team employs 9 specialists, each of whom is a professional in his field, so You do not need to look for employees - the team is already packed and ready! We do not "drain" money for Your constant investment in advertising, but we work for the result.',
     'about_txt3' => 'The pricing policy is absolutely loyal, our task is not to do a one-time job, our clients stay with us for years, because always when scaling, You can improve performance, optimize advertising and follow new trends in marketing and advertising. We have experience in launching projects in such countries: Ukraine, Kazakhstan, USA, Bosnia, Czech Republic, Malaysia, Poland, Greece, UAE, Great Britain and next project may be Yours!',
 

@@ -38,5 +38,5 @@ mix
             }),
         ]
    })
-   .browserSync('wamp-new-laravel')
+   .browserSync('wamp')
    .version();

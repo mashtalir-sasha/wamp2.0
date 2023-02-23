@@ -158,7 +158,7 @@ return [
          * See http://docs.ckeditor.com/#!/api/CKEDITOR.config
          */
         'ckeditor'  => [
-            'defaultLanguage' => config('app.locale'),
+            'defaultLanguage' => 'en',
             'height'       => 200,
             'allowedContent' => true,
             'extraPlugins' => 'uploadimage,image2,justify,youtube,uploadfile',

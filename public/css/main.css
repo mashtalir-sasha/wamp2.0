@@ -203,11 +203,9 @@ body.fancybox-iosfix {
   cursor: zoom-in; }
 
 .fancybox-can-drag .fancybox-image-wrap {
-  cursor: -webkit-grab;
   cursor: grab; }
 
 .fancybox-is-dragging .fancybox-image-wrap {
-  cursor: -webkit-grabbing;
   cursor: grabbing; }
 
 .fancybox-image,
@@ -446,7 +444,6 @@ body.fancybox-iosfix {
   border-radius: 100%;
   height: 50px;
   width: 50px;
-  -webkit-animation: fancybox-rotate .8s infinite linear;
   animation: fancybox-rotate .8s infinite linear;
   background: transparent;
   position: absolute;
@@ -455,12 +452,6 @@ body.fancybox-iosfix {
   margin-top: -30px;
   margin-left: -30px;
   z-index: 99999; }
-
-@-webkit-keyframes fancybox-rotate {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(359deg); } }
 
 @keyframes fancybox-rotate {
   from {
@@ -4692,7 +4683,6 @@ button:focus {
 
 .btn {
   display: block;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 20px 40px;
@@ -4851,7 +4841,6 @@ button:focus {
   color: #000;
 }
 .nav-lang {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
@@ -5136,7 +5125,6 @@ button:focus {
   color: #20252a;
   box-shadow: 0px 0px 81px -11px #f9ae00;
   margin: 0 auto;
-  -webkit-animation: shadow-pulse 2s linear 2s infinite alternate;
   animation: shadow-pulse 2s linear 2s infinite alternate;
 }
 
@@ -5219,7 +5207,6 @@ button:focus {
   color: #20252a;
   box-shadow: 0px 0px 81px -11px #f9ae00;
   margin: 0 auto;
-  -webkit-animation: shadow-pulse 2s linear 2s infinite alternate;
   animation: shadow-pulse 2s linear 2s infinite alternate;
   padding-left: 20px;
   padding-right: 20px;
@@ -5285,18 +5272,6 @@ button:focus {
   content: "";
 }
 
-@-webkit-keyframes linepull {
-  0% {
-    top: 0px;
-  }
-  50% {
-    top: 146px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-
 @keyframes linepull {
   0% {
     top: 0px;
@@ -5312,7 +5287,6 @@ button:focus {
   position: absolute;
   width: 33px;
   height: 33px;
-  -webkit-animation: linepull 5s linear 1s infinite alternate;
   animation: linepull 5s linear 1s infinite alternate;
 }
 .in-downer:before {
@@ -5627,7 +5601,6 @@ button:focus {
   color: #20252a;
   box-shadow: 0px 0px 81px -11px #f9ae00;
   margin: 40px auto 0;
-  -webkit-animation: shadow-pulse 2s linear 2s infinite alternate;
   animation: shadow-pulse 2s linear 2s infinite alternate;
 }
 
@@ -5671,7 +5644,6 @@ button:focus {
 .clients-slider .slick-dots {
   display: flex;
   align-items: center;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   list-style-type: none;
@@ -6046,7 +6018,6 @@ button:focus {
   top: 0;
 }
 .block-title__ttl {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
@@ -6232,7 +6203,6 @@ button:focus {
   display: none;
 }
 .service-portfolio__img {
-  -webkit-animation: fadeIn 0.3s;
   animation: fadeIn 0.3s;
   -o-object-fit: cover;
   object-fit: cover;
@@ -6244,15 +6214,6 @@ button:focus {
 }
 .service-portfolio__btn.none {
   display: none;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 @keyframes fadeIn {
@@ -6402,18 +6363,6 @@ button:focus {
   right: -35%;
 }
 
-@-webkit-keyframes shadow-pulse {
-  0% {
-    box-shadow: 0px 0px 81px -11px #f9ae00;
-  }
-  50% {
-    box-shadow: 0px 0px 81px -11px rgba(249, 174, 0, 0.5);
-  }
-  100% {
-    box-shadow: 0px 0px 81px -11px #f9ae00;
-  }
-}
-
 @keyframes shadow-pulse {
   0% {
     box-shadow: 0px 0px 81px -11px #f9ae00;
@@ -6503,7 +6452,6 @@ button:focus {
   color: #20252a;
   box-shadow: 0px 0px 81px -11px #f9ae00;
   margin: 0 auto;
-  -webkit-animation: shadow-pulse 2s linear 2s infinite alternate;
   animation: shadow-pulse 2s linear 2s infinite alternate;
   padding-left: 20px;
   padding-right: 20px;
@@ -6676,7 +6624,6 @@ button:focus {
     flex-direction: column;
   }
   .nav-list__item {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     font-size: 20px;
@@ -6689,7 +6636,6 @@ button:focus {
   .nav__phone {
     display: block;
     text-align: center;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto 30px;
