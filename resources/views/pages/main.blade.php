@@ -18,6 +18,9 @@
 @include('templates.nav')
 
 <header class="head height" style="background-image: url(/img/main-bg.jpg)">
+	<video class="head__video" autoplay muted loop>
+		<source src="{{ asset('bg_video.mp4') }}" type="video/mp4">
+	</video>
 	<div class="container">
 		<div class="row align-items-center justify-content-end">
 			<div class="col-xl-8 col-md-9">
@@ -131,7 +134,9 @@
 	</div>
 </section>
 
-<section id="cases" class="portfolio">
+@include('templates.about')
+
+<!-- <section id="cases" class="portfolio">
 	<div class="container">
 		<div class="animate-container animate-container_i12">
 			<img src="/img/animation/12.png" alt="animate" class="animate">
@@ -233,10 +238,9 @@
 		@endforeach
 		</div>
 	</div>
-</section>
+</section> -->
 
 @include('templates.example-form')
-@include('templates.about')
 @include('templates.clients')
 @include('templates.map')
 @include('templates.foot')

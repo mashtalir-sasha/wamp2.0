@@ -31,9 +31,9 @@
 						@endforeach
 						</ul>
 					</li>
-					<li class="nav-list__item">
+					<!-- <li class="nav-list__item">
 						<a @if(Route::currentRouteName() == 'home') href="#cases" class="anchor" @else href="{{ route('home') }}#cases" @endif>{{ trans('main.nav3') }}</a>
-					</li>
+					</li> -->
 					<li class="nav-list__item @if(Route::currentRouteName() == 'portfolio') active @endif">
 						<a href="{{ route('portfolio') }}">{{ trans('main.nav4') }}</a>
 					</li>
